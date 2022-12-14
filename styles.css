@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    /* FONTS */
+
+    --font-overpass: 'Overpass', sans-serif;
+    --font-weight-light: 400;
+    --font-weight-bold: 700;
+    --font-size-paragraph:15px;
+    --font-size-small:14px;
+
+    /* COLORS */
+
+    --primary-orange: hsl(25, 97%, 53%);
+
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-light-gray: hsl(217, 12%, 63%);
+    --neutral-medium-gray: hsl(216, 12%, 54%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-overpass);
+}
+
+body{
+    width:100vw;
+    min-height:100vh;
+    background-color:var(--neutral-very-dark-blue);
+    color:var(--neutral-White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:var(--font-size-paragraph);
+    
+}
+
+.description{
+    color:var(--neutral-light-gray);
+    
+}
+
+/* Hide the initial card on submit and show the other one */
+.hidden{
+    display: none;
+}
+
+.card-how-did-we-do{
+    width:330px;
+    background: linear-gradient(
+        360deg,
+        hsl(215, 27%, 12%),
+        var(--neutral-dark-blue));
+    
+    border-radius:1rem;
+    padding:1rem 1.5rem 1.8rem 1.5rem;
+}
+
+.card-how-did-we-do .star-image{
+    padding:1rem;
+    background-color: var(--neutral-dark-blue);
+    border-radius:50%;
+    margin-bottom:0.7rem;
+}
+.card-how-did-we-do .title {
+    font-size:1.5rem;
+}
+.card-how-did-we-do .description{
+    margin:1rem 0 1.8rem 0;
+    font-size:var(--font-size-small);
+    line-height:1.3rem;
+}
+
+/*
+input[type="radio"] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--neutral-dark-blue);
+    appearance:none;
+    transition:all 0.2s ease-out;
+    cursor: pointer;
+}
+input[type="radio"]:focus{
+    outline: none;
+    background-color: var(--primary-orange);
+}
+input[type="radio"]:hover{
+    background-color: var(--neutral-medium-gray);
+}
+input[type="radio"]:checked{
+    background-color: var(--primary-orange);
+}
+
+label span:first-of-type {
+    position: relative;
+    margin-left:-20px;
+    left: -35px;
+    font-size: 18px;
+    color: var(--neutral-White);
+    top:-19px;
+    font-weight: var(--font-weight-bold);
+    opacity: 0.7;
+    cursor:pointer;
+    margin:0 1px;
+  }
+label span#more-to-the-left{
+    left:-32px;
+}
+*/
+
+.card-how-did-we-do .rating-buttons-container{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+    border:none;
+}
+.card-how-did-we-do .rating-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:2px;
+    width:2.8rem;
+    height:2.8rem;
+    border-radius:50%;
+    background-color: var(--neutral-dark-blue);
+    color:var(--neutral-light-gray);
+    font-size:var(--font-size-paragraph);
+    font-weight: var(--font-weight-bold);
+    border:none;
+    cursor:pointer;
+}
+.focused{
+    background-color: var(--primary-orange)!important;
+    color:var(--neutral-White)!important;
+}
+
+.card-how-did-we-do .submit-button{
+    display: block;
+    width:100%;
+    padding:0.9rem;
+    margin-top:1.5rem;
+    background-color: var(--primary-orange);
+    color: var(--neutral-White);
+    font-weight:var(--font-weight-bold);
+    letter-spacing: 2px;
+    border-radius:2rem;
+    border:none;
+    font-size:var(--font-size-small);
+    transition:all 0.25s ease-out;
+    cursor:pointer;
+}
+
+.card-thank-you{
+    width:330px;
+    background: linear-gradient(
+        360deg,
+        hsl(215, 27%, 12%),
+        var(--neutral-dark-blue));
+    text-align: center;
+    border-radius:1rem;
+}
+
+.card-thank-you .thank-you-image{
+    margin-top:2rem;
+    
+}
+.card-thank-you .selection{
+    font-size:var(--font-size-paragraph);
+    color:var(--primary-orange);
+    background-color:var(--neutral-dark-blue);
+    opacity:0.5;
+    padding:0.5rem 1rem 0.3rem 1rem;
+    width:fit-content;
+    margin:1rem auto;
+    margin-bottom:1.7rem;
+    border-radius:1rem;
+}
+.card-thank-you .description{
+    margin:1rem 1.8rem;
+    padding-bottom:1.5rem;
+    font-size:var(--font-size-small);
+    line-height: 1.3rem;
+}
+
+@media(max-width:599px){
+    .card-thank-you .thank-you-image{
+        width:9rem;
+    }
+}
+@media(min-width:600px){
+    .card-how-did-we-do{
+    width:415px;
+    padding:2rem 2.3rem;
+    border-radius:2rem;
+    }
+    .card-how-did-we-do .star-image{
+        margin-bottom:1.8rem;
+    }
+    .card-how-did-we-do .title{
+        font-size:2rem;
+    }
+    .card-how-did-we-do .description{
+        font-size: var(--font-size-paragraph);
+        line-height:initial;
+    }
+    .card-how-did-we-do .rating-button{
+        width:3.4rem;
+        height:3.4rem;
+        font-size:18px;
+    }
+    .card-how-did-we-do .rating-button:hover{
+        background-color: var(--neutral-light-gray);
+        color:var(--neutral-White);
+    }
+    .card-how-did-we-do .submit-button{
+        margin-top:2.2rem;
+        padding:0.8rem;
+        opacity:0.9;
+        font-size:var(--font-size-paragraph);
+    }
+    .card-how-did-we-do .submit-button:hover{
+        color:var(--primary-orange);
+        background-color: var(--neutral-White);
+    }
+
+    .card-thank-you{
+        width:415px;
+        border-radius:2rem;
+    }
+    .card-thank-you .thank-you-image{
+        margin-top:3rem;
+    }
+    .card-thank-you .selection{
+        margin-top:1.7rem;
+        margin-bottom:2rem;
+    }
+    .card-thank-you .title{
+        font-size:1.7rem;
+    }
+    .card-thank-you .description{
+        margin:1rem 2.3rem;
+        padding-bottom:2rem;
+        font-size:var(--font-size-paragraph);
+        line-height: 1.5rem;
+        
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="stylesheet" href="./styles.css" />
+
+		<title>Interactive rating component</title>
+	</head>
+	<body>
+		<!-- Rating state start -->
+
+		<article class="card-how-did-we-do" class="">
+			<img
+				src="./images/icon-star.svg"
+				alt="star icon"
+				class="star-image"
+			/>
+			<h1 class="title">How did we do?</h1>
+			<p class="description">
+				Please let us know how we did with your support request. All
+				feedback is appreciated to help us improve our offering!
+			</p>
+			<form
+				action=""
+				class="rating-number"
+				id="rating-form"
+				method="POST"
+			>
+				<!--
+				<label for="rate-1">
+					<input type="radio" name="rate" id="rate-1" />
+					<span id="more-to-the-left">1</span></label
+				>
+				<label for="rate-2"
+					><input type="radio" name="rate" id="rate-2" /><span
+						>2</span
+					></label
+				>
+				<label for="rate-3"
+					><input type="radio" name="rate" id="rate-3" /><span
+						>3</span
+					></label
+				>
+				<label for="rate-4"
+					><input type="radio" name="rate" id="rate-4" /><span
+						>4</span
+					></label
+				>
+				<label for="rate-5"
+					><input type="radio" name="rate" id="rate-5" /><span
+						>5</span
+					></label
+				>
+-->
+				<fieldset class="rating-buttons-container">
+					<label for="1"
+						><input
+							type="button"
+							value="1"
+							class="rating-button"
+							id="first"
+					/></label>
+					<label for="2"
+						><input type="button" value="2" class="rating-button"
+					/></label>
+					<label for="3"
+						><input type="button" value="3" class="rating-button"
+					/></label>
+					<label for="4"
+						><input type="button" value="4" class="rating-button"
+					/></label>
+					<label for="5"
+						><input type="button" value="5" class="rating-button"
+					/></label>
+				</fieldset>
+				<button class="submit-button" type="submit">SUBMIT</button>
+			</form>
+		</article>
+
+		<!-- Rating state end -->
+
+		<!-- Thank you state start -->
+
+		<article class="card-thank-you hidden">
+			<img
+				src="./images/illustration-thank-you.svg"
+				alt="thank you image"
+				class="thank-you-image"
+			/>
+			<h2 class="selection">
+				You selected
+				<span id="rating-out-of-five"></span>
+				out of 5
+			</h2>
+			<h1 class="title">Thank you!</h1>
+			<p class="description">
+				We appreciate you taking the time to give a rating. If you ever
+				need more support, don’t hesitate to get in touch!
+			</p>
+		</article>
+
+		<!-- Thank you state end -->
+	</body>
+</html>
+<script src="./script.js"></script>
