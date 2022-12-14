@@ -11,26 +11,26 @@
 	</head>
 	<body>
 		<!-- Rating state start -->
-
-		<article class="card-how-did-we-do" class="">
-			<img
-				src="./images/icon-star.svg"
-				alt=""
-				class="star-image"
-				aria-hidden="true"
-			/>
-			<h1 class="title">How did we do?</h1>
-			<p class="description">
-				Please let us know how we did with your support request. All
-				feedback is appreciated to help us improve our offering!
-			</p>
-			<form
-				action=""
-				class="rating-number"
-				id="rating-form"
-				method="POST"
-			>
-				<!--
+		<main>
+			<article class="card-how-did-we-do" class="">
+				<img
+					src="./images/icon-star.svg"
+					alt=""
+					class="star-image"
+					aria-hidden="true"
+				/>
+				<h1 class="title">How did we do?</h1>
+				<p class="description">
+					Please let us know how we did with your support request. All
+					feedback is appreciated to help us improve our offering!
+				</p>
+				<form
+					action=""
+					class="rating-number"
+					id="rating-form"
+					method="POST"
+				>
+					<!--
 				<label for="rate-1">
 					<input type="radio" name="rate" id="rate-1" />
 					<span id="more-to-the-left">1</span></label
@@ -56,55 +56,72 @@
 					></label
 				>
 -->
-				<fieldset class="rating-buttons-container">
-					<label for="1"
-						><input
-							type="button"
-							value="1"
-							class="rating-button"
-							id="first"
-					/></label>
-					<label for="2"
-						><input type="button" value="2" class="rating-button"
-					/></label>
-					<label for="3"
-						><input type="button" value="3" class="rating-button"
-					/></label>
-					<label for="4"
-						><input type="button" value="4" class="rating-button"
-					/></label>
-					<label for="5"
-						><input type="button" value="5" class="rating-button"
-					/></label>
-				</fieldset>
-				<button class="submit-button" type="submit">SUBMIT</button>
-			</form>
-		</article>
+					<fieldset class="rating-buttons-container">
+						<label for="button-one"
+							><input
+								type="button"
+								value="1"
+								class="rating-button"
+								id="button-one"
+						/></label>
+						<label for="button-two"
+							><input
+								type="button"
+								value="2"
+								class="rating-button"
+								id="button-two"
+						/></label>
+						<label for="button-three"
+							><input
+								type="button"
+								value="3"
+								class="rating-button"
+								id="button-three"
+						/></label>
+						<label for="button-four"
+							><input
+								type="button"
+								value="4"
+								class="rating-button"
+								id="button-four"
+						/></label>
+						<label for="button-five"
+							><input
+								type="button"
+								value="5"
+								class="rating-button"
+								id="button-five"
+						/></label>
+					</fieldset>
+					<button class="submit-button" type="submit">SUBMIT</button>
+				</form>
+			</article>
 
-		<!-- Rating state end -->
+			<!-- Rating state end -->
 
-		<!-- Thank you state start -->
+			<!-- Thank you state start -->
 
-		<article class="card-thank-you hidden">
-			<img
-				src="./images/illustration-thank-you.svg"
-				alt=""
-				class="thank-you-image"
-				aria-hidden="true"
-			/>
-			<h2 class="selection">
-				You selected
-				<span id="rating-out-of-five"></span>
-				out of 5
-			</h2>
-			<h1 class="title">Thank you!</h1>
-			<p class="description">
-				We appreciate you taking the time to give a rating. If you ever
-				need more support, don’t hesitate to get in touch!
-			</p>
-		</article>
+			<article class="card-thank-you hidden">
+				<img
+					src="./images/illustration-thank-you.svg"
+					alt=""
+					class="thank-you-image"
+					aria-hidden="true"
+				/>
+				<h2 class="selection">
+					You selected
+					<span id="rating-out-of-five"></span>
+					out of 5
+				</h2>
+				<h1 class="title">Thank you!</h1>
+				<p class="description">
+					We appreciate you taking the time to give a rating. If you
+					ever need more support, don’t hesitate to get in touch!
+				</p>
+			</article>
 
-		<!-- Thank you state end -->
+			<!-- Thank you state end -->
+		</main>
 	</body>
 </html>
 <script src="./script.js"></script>

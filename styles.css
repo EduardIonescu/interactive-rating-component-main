@@ -203,15 +203,15 @@ label span#more-to-the-left{
         margin-bottom:1.8rem;
     }
     .card-how-did-we-do .title{
-        font-size:2rem;
+        font-size:1.8rem;
     }
     .card-how-did-we-do .description{
         font-size: var(--font-size-paragraph);
-        line-height:initial;
+        line-height:1.5rem;
     }
     .card-how-did-we-do .rating-button{
-        width:3.4rem;
-        height:3.4rem;
+        width:3.2rem;
+        height:3.2rem;
         font-size:18px;
     }
     .card-how-did-we-do .rating-button:hover{
